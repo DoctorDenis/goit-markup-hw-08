@@ -1,0 +1,115 @@
+.form__wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: var(--text-color-secondary);
+}
+
+.form__input {
+  @include font((Roboto, sans-serif), normal, 400, 12px, (14 / 12), 0.01em);
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  border: 1px solid var(--black-02opacity);
+  border-radius: 4px;
+  outline: none;
+  padding-left: 42px;
+  @include transition(border);
+}
+
+.form__input {
+  &:focus-visible,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.form__input {
+  &:focus + .form__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.form__input--textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  &::placeholder {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+    color: var(--placeholder-color);
+  }
+}
+
+.form__wrapper--checkbox {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.form__link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.form__icon--checkbox {
+  fill: currentColor;
+}
+
+.form__input--checkbox {
+  position: absolute;
+  left: 14px;
+  top: 1px;
+  display: inline-flex;
+  @extend %center-child;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  @include transition(border);
+  color: transparent;
+  &:checked + & {
+    border: 2px solid var(--accent-color);
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.form__label--checkbox {
+  margin-left: 26px;
+}
+
+.form__btn {
+  display: block;
+  padding: 10px 55px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  &:hover {
+    background-color: var(--accent-color-hover);
+  }
+}

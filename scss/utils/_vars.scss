@@ -1,0 +1,49 @@
+:root {
+  --text-color-main: #212121;
+  --logo-text-color: #000000;
+  --text-color-secondary: #757575;
+  --accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
+  --accent-color-overlay: rgba(33, 150, 243, 80%);
+  --main-bg-color: #e5e5e5;
+  --secondary-bg-color: #f5f4fa;
+  --dark-grey-bg-color: #2f303a;
+  --white-color: #ffffff;
+  --address-color: #ffffffa0;
+  --hero-layout-color: rgba(47, 48, 58, 0.4);
+  --black-008opacity: rgba(0, 0, 0, 0.08);
+  --black-01opacity: rgba(0, 0, 0, 0.1);
+  --black-012opacity: rgba(0, 0, 0, 0.12);
+  --black-015opacity: rgba(0, 0, 0, 0.15);
+  --black-02opacity: rgba(0, 0, 0, 0.2);
+  --darkgrey-layout-color: rgba(47, 48, 58, 80%);
+  --lightgrey-icon-color: #afb1b8;
+  --white-border-color: #eeeeee;
+  --white-01opacity: rgba(255, 255, 255, 0.1);
+  --white-03opacity: rgba(255, 255, 255, 0.3);
+  --white-06opacity: rgba(255, 255, 255, 0.6);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
+}
+
+%center-child {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin font($family, $style, $weight, $size, $line-height, $letter-spacing) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin transition($property) {
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: $property;
+  transition-property: $property;
+}

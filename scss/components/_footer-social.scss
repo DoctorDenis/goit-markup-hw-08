@@ -1,0 +1,6 @@
+.footer-social__header {
+  @include font((Roboto, sans-serif), normal, 700, 14px, (16 / 14), 0.03em);
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}

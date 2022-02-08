@@ -1,0 +1,35 @@
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__btn {
+  background-color: var(--secondary-bg-color);
+  border: 0px;
+  cursor: pointer;
+  @include font((Roboto, sans-serif), normal, 500, 16px, (26 / 16), 0.03em);
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--text-color-main);
+  border-radius: 4px;
+  padding: 8px 22px;
+  margin: 0 4px;
+  @include transition((background-color, box-shadow, color));
+}
+
+.filter__btn {
+  &.active,
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px var(--black-01opacity),
+      0px 1px 2px var(--black-008opacity), 0px 2px 2px var(--black-012opacity);
+    color: var(--white-color);
+  }
+}

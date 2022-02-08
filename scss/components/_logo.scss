@@ -1,0 +1,25 @@
+//-------Logo -------------//
+.logo {
+  @include font(Raleway, normal, 700, 26px, (31 / 26), 0.03em);
+  color: var(--logo-text-color);
+  &__first-part {
+    color: var(--accent-color);
+  }
+}
+
+.logo--light {
+  color: var(--white-color);
+  display: inline-block;
+}
+
+.header {
+  .logo {
+    margin-right: 65px;
+  }
+}
+
+.footer {
+  .logo {
+    margin-bottom: 20px;
+  }
+}

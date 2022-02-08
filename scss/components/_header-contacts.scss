@@ -1,0 +1,25 @@
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-contacts__item {
+  @include font((Roboto, sans-serif), normal, 500, 14px, (16 / 14), 0.02em);
+  color: var(--text-color-secondary);
+  padding: 25px;
+  display: inline-flex;
+  align-items: center;
+  @include transition(color);
+}
+
+.header-contacts__item {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

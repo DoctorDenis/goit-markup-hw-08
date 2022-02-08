@@ -1,0 +1,35 @@
+// Clients section
+.clients {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    @include font(Roboto, normal, 700, 36px, (42 / 36), 0.03em);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    display: inline-flex;
+    @extend %center-child;
+    padding: 16px 32px;
+    border: 1px solid var(--lightgrey-icon-color);
+    border-radius: 3px;
+    color: var(--lightgrey-icon-color);
+    @include transition((border, color));
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
