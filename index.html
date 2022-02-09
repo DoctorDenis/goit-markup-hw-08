@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="container">
       <nav class="header-nav">
         <a href="index.html" class="link logo header-logo"><span class="logo__first-part">Web</span>Studio</a>
@@ -48,7 +48,7 @@
         </li>
       </ul>
     </div>
-  </header> -->
+  </header>
 
   <main>
     <!--  Hero section  -->
@@ -103,7 +103,8 @@
       <div class="container">
         <h2 class="about__header">Чем мы занимаемся</h2>
         <ul class="list about__list">
-          <li class="about__item"><img src="./images/hands_on_the_tablet.jpg" width="370" height="294"
+          <li class="about__item"><img 
+            src="./images/hands_on_the_tablet.jpg" width="370" height="294"
             alt="Man is sitting at the table and holding hands on the keyboard">
             <div class="about__footer">
               <p class="about__text">десктопные приложения</p>
@@ -131,8 +132,22 @@
       <div class="container">
         <h2 class="team__header">Наша команда</h2>
         <ul class="list team__list">
-         <li class="person-card">
-          <img src="./images/igor_demyanenko.jpg" width="270" alt="The photo of man - Igor Demyanenko">
+         <li class="person-card team__item">
+           <picture>
+             <source srcset="./images/igor_demyanenko-desk@1x.jpg 1x,
+                             ./images/igor_demyanenko-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+             <source 
+             srcset="./images/igor_demyanenko-tab@1x.jpg 1x,
+                    ./images/igor_demyanenko-tab@2x.jpg 2x"
+             media="(min-width: 768px)">
+             <source 
+             srcset="./images/igor_demyanenko-mob@1x.jpg 1x,
+                    ./images/igor_demyanenko-mob@2x.jpg 2x"
+             media="(min-width: 480px)">
+             <img src="./images/igor_demyanenko.jpg" alt="The photo of man - Igor Demyanenko">
+           </picture>
+
           <div class="person-card__info">
             <h3 class="person-card__name">Игорь Демьяненко</h3>
             <p class="person-card__position">Product Designer</p>
@@ -168,8 +183,21 @@
             </ul>
           </div>
          </li>
-         <li class="person-card">
-          <img src="./images/olga_repina.jpg" width="270" alt="The photo of woman - Olga Repina">
+         <li class="person-card team__item">
+          <picture>
+            <source srcset="./images/olga_repina-desk@1x.jpg 1x,
+                            ./images/olga_repina-desk@2x.jpg 2x"
+                   media="(min-width: 1200px)">
+            <source 
+            srcset="./images/olga_repina-tab@1x.jpg 1x,
+                   ./images/olga_repina-tab@2x.jpg 2x"
+            media="(min-width: 768px)">
+            <source 
+            srcset="./images/olga_repina-mob@1x.jpg 1x,
+                   ./images/olga_repina-mob@2x.jpg 2x"
+            media="(min-width: 480px)">
+            <img src="./images/olga_repina.jpg" alt="The photo of woman - Olga Repina">
+          </picture>
           <div class="person-card__info">
             <h3 class="person-card__name">Ольга Репина</h3>
             <p class="person-card__position">Frontend Developer</p>
@@ -205,8 +233,21 @@
             </ul>
           </div>
          </li>
-         <li class="person-card">
-          <img src="./images/nikolay_tarasov.jpg" width="270" alt="The photo of man - Nikolay Tarasov">
+         <li class="person-card team__item">
+          <picture>
+            <source srcset="./images/nikolay_tarasov-desk@1x.jpg 1x,
+                            ./images/nikolay_tarasov-desk@2x.jpg 2x"
+                   media="(min-width: 1200px)">
+            <source 
+            srcset="./images/nikolay_tarasov-tab@1x.jpg 1x,
+                   ./images/nikolay_tarasov-tab@2x.jpg 2x"
+            media="(min-width: 768px)">
+            <source 
+            srcset="./images/nikolay_tarasov-mob@1x.jpg 1x,
+                   ./images/nikolay_tarasov-mob@2x.jpg 2x"
+            media="(min-width: 480px)">
+            <img src="./images/nikolay_tarasov.jpg" alt="The photo of man - Nikolay Tarasov">
+          </picture>
           <div class="person-card__info">
             <h3 class="person-card__name">Николай Тарасов</h3>
             <p class="person-card__position">Marketing</p>
@@ -242,8 +283,21 @@
             </ul>
           </div>
          </li>
-         <li class="person-card">
-          <img src="./images/mikhail_ermakov.jpg" width="270" alt="The photo of man - Mikhail Ermakov">
+         <li class="person-card team__item">
+          <picture>
+            <source srcset="./images/mikhail_ermakov-desk@1x.jpg 1x,
+                            ./images/mikhail_ermakov-desk@2x.jpg 2x"
+                   media="(min-width: 1200px)">
+            <source 
+            srcset="./images/mikhail_ermakov-tab@1x.jpg 1x,
+                   ./images/mikhail_ermakov-tab@2x.jpg 2x"
+            media="(min-width: 768px)">
+            <source 
+            srcset="./images/mikhail_ermakov-mob@1x.jpg 1x,
+                   ./images/mikhail_ermakov-mob@2x.jpg 2x"
+            media="(min-width: 480px)">
+            <img src="./images/mikhail_ermakov.jpg" alt="The photo of man - Mikhail Ermakov">
+          </picture>
           <div class="person-card__info">
             <h3 class="person-card__name">Михаил Ермаков</h3>
             <p class="person-card__position">UI Designer</p>
@@ -285,7 +339,7 @@
     <!--   End of team section   -->
 
     <!--   Clients section    -->
-    <!-- <section class="section clients">
+    <section class="section clients">
       <div class="container">
         <h2 class="clients__header">Постоянные клиенты</h2>
         <ul class="clients__list list">
@@ -333,12 +387,12 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!--     End of clients section    -->
   </main>
 
   <!--    Footer section    -->
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-contacts">
         <a href="index.html" class="link logo logo--light footer-logo"><span class="logo__first-part">Web</span>Studio</a>
@@ -391,8 +445,9 @@
         </ul>
       </div>
       <div class="subscription">
+        <p class="subscription__title">подпишитесь на рассылку</p>
         <form action="#">
-          <p class="subscription__title">подпишитесь на рассылку</p>
+          
           <div class="subscription__wrapper">
             <input class="subscription__input" type="email" name="footer-subscription-email" id="footer-subscription-email" placeholder="E-mail">
             <button class="subscription__btn" type="submit">Подписаться
@@ -404,7 +459,7 @@
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
   <!--    End of footer section    -->
 
   <!--     Modal window     -->

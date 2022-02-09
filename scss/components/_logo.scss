@@ -21,5 +21,8 @@
 .footer {
   .logo {
     margin-bottom: 20px;
+    @media screen and (min-width: 320px) {
+      @include font(Raleway, normal, 700, 24px, (28 / 24), 0.03em);
+    }
   }
 }

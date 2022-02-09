@@ -4,7 +4,19 @@
   padding-bottom: 60px;
   .container {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    // @media screen and (min-width: 768px) {
+    //   width: 768px;
+    // }
+    @media screen and (min-width: 1200px) {
+      margin: 0 auto;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+
+
   }
 }
