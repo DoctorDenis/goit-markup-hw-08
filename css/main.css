@@ -64,7 +64,7 @@ ol {
   --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
-.social-list__link, .project-card__overlay, .footer-social, .subscription__btn, .form__input--checkbox, .features__image, .about__footer, .clients__item, .clients__link {
+.social-list__link, .project-card, .project-card__overlay, .footer-social, .subscription__btn, .form__input--checkbox, .features__image, .about__footer, .clients__item, .clients__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -388,6 +388,9 @@ ol {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -1340,16 +1343,31 @@ ol {
 }
 
 .projects {
-  margin-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: -30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .projects {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    width: 370px;
+  }
 }
 
 .footer {

@@ -3,6 +3,8 @@
   background: var(--white-color);
   box-sizing: border-box;
   width: 100%;
+  display: flex;
+  @extend %center-child;  
   @media screen and (min-width: 768px) {
     width: 354px;
   }
