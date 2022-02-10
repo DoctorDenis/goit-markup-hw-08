@@ -1076,6 +1076,7 @@ ol {
   font-size: 35px;
   border: none;
   background-color: transparent;
+  z-index: 1;
 }
 
 .mob-menu__list {
@@ -1278,6 +1279,8 @@ ol {
   background-color: var(--dark-grey-bg-color);
   background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-layout-color)), to(var(--hero-layout-color))), url(../images/hero-bg-mob@1x.jpg);
   background-image: linear-gradient(to top, var(--hero-layout-color), var(--hero-layout-color)), url(../images/hero-bg-mob@1x.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-layout-color)), to(var(--hero-layout-color))), url(../../images/hero-bg-mob@1x.jpg);
+  background-image: linear-gradient(to top, var(--hero-layout-color), var(--hero-layout-color)), url(../../images/hero-bg-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
