@@ -1150,6 +1150,7 @@ ol {
 .mob-menu__btn:hover,
 .mob-menu__btn:focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .header .container {
