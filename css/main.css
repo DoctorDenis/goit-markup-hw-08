@@ -588,7 +588,6 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -650,6 +649,9 @@ ol {
 @media screen and (min-width: 768px) {
   .footer-social {
     margin-right: 74px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -673,7 +675,6 @@ ol {
 
 .subscription {
   margin-top: 60px;
-  margin-bottom: 60px;
   text-align: center;
   width: 100%;
 }
@@ -691,6 +692,7 @@ ol {
     width: 570px;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 0;
     text-align: left;
   }
 }
@@ -1279,8 +1281,6 @@ ol {
   background-color: var(--dark-grey-bg-color);
   background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-layout-color)), to(var(--hero-layout-color))), url(../images/hero-bg-mob@1x.jpg);
   background-image: linear-gradient(to top, var(--hero-layout-color), var(--hero-layout-color)), url(../images/hero-bg-mob@1x.jpg);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-layout-color)), to(var(--hero-layout-color))), url(../../images/hero-bg-mob@1x.jpg);
-  background-image: linear-gradient(to top, var(--hero-layout-color), var(--hero-layout-color)), url(../../images/hero-bg-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1311,6 +1311,9 @@ ol {
   .hero.section {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-layout-color)), to(var(--hero-layout-color))), url(../images/hero-bg-desk@1x.jpg);
     background-image: linear-gradient(to top, var(--hero-layout-color), var(--hero-layout-color)), url(../images/hero-bg-desk@1x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 
@@ -1455,6 +1458,12 @@ ol {
   margin-bottom: 10px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__header {
+    text-align: left;
+  }
 }
 
 .features__text {
@@ -1642,8 +1651,6 @@ ol {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -60px;
-  margin-bottom: -60px;
 }
 
 @media screen and (min-width: 1200px) {
